@@ -9,11 +9,8 @@ class Solution {
     if (preorder == Nil) null
     else {
       val root :: preorder_left_rifht = preorder
-      println(233)
       val (inorder_left, inorder_root_right) = inorder.span(_ != root)
-      val _ :: inorder_right = inorder_root_right
-      println(233)
-
+      val inorder_right = if (inorder_root_right==Nil) Nil else inorder_root_right.tail
       val (preorder_left, preorder_right) = preorder_left_rifht.span(inorder_right.contains)
       val t = new TreeNode(root)
       t.left = buildTreeH(preorder_left, inorder_left)
