@@ -1,3 +1,2 @@
-val a = List()
-a.tail
-//val b +: c :+ m = a
+val str = "  foo sss  "
+str.trim
