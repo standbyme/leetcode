@@ -1,3 +1,4 @@
+package p38
 object Solution {
 
     def hsGroup(value: List[Int]): List[List[Int]] = value match{
