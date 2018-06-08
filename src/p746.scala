@@ -15,7 +15,7 @@ object Solution {
 
       array_2(i) = math.min(array_2(i - 2) + cost(i), array_2(i - 1) + cost(i))
     }
-    math.min(array_1.last, array_2.last)
+    math.min(array_1.last, array_2(len-2))
   }
 }
 
