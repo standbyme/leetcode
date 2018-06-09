@@ -1,2 +1,5 @@
-"hello world".split(" ")
-"hello       world".split(" ").filterNot(_.isEmpty).last.length
+for (x <- (5 to 0)) {
+  println(x)
+}
+
+(5 to 0).foreach(println)
