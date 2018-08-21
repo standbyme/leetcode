@@ -1,3 +1,5 @@
+package p169
+
 object Solution {
   def helper(tup: (Int, Int), v: Int): (Int, Int) = {
     val (prev, counter) = tup

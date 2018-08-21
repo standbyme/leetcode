@@ -1,3 +1,5 @@
+package p120
+
 object Solution {
   def minimumTotal(triangle: List[List[Int]]): Int = {
     def fetch(i: Int, prev: List[Int]): Int = {
