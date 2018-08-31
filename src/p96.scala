@@ -11,7 +11,7 @@ object Solution {
       for (m <- 3 to n) {
         val a = 2 * array(m - 1)
         val b = for (x <- 1 to m - 2) yield {
-          array(x) + a(m - x - 1)
+          array(x) + array(m - x - 1)
         }
         val c = b.sum
         array(m) = a + c
